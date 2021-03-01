@@ -1,0 +1,102 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=5,user-scalable=1">
+    <meta name="theme-color" content="#444">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <link rel="stylesheet" href="index.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com"> 
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <title>My Codiv - Visualize News</title>
+  </head>
+  <body>
+    <div class="assets">
+      <svg>
+        <defs>
+          <pattern
+            id="stripes"
+            width="5px"
+            height="5px"
+            patternUnits="userSpaceOnUse"
+            patternContentUnits="userSpaceOnUse"
+            viewBox="0 0 50 50"
+            preserveAspectRatio="none"
+            patternTransform="rotate(-45)"
+          >
+            <line
+              x1="0"
+              x2="100"
+              y1="50"
+              y2="50"
+              stroke-width="25"
+              stroke="#444"
+            />
+          </pattern>
+          <pattern
+            id="stripes2"
+            width="5px"
+            height="5px"
+            patternUnits="userSpaceOnUse"
+            patternContentUnits="userSpaceOnUse"
+            viewBox="0 0 50 50"
+            preserveAspectRatio="none"
+            patternTransform="rotate(45)"
+          >
+            <rect
+              x="0"
+              y="0"
+              width="100"
+              height="100"
+              fill="#444"
+              stroke="none"
+            />
+            <line
+              x1="0"
+              x2="100"
+              y1="50"
+              y2="50"
+              stroke-width="25"
+              stroke="#fff"
+            />
+          </pattern>
+        </defs>
+      </svg>
+    </div>
+    <header class="header">
+      <div class="square"></div>
+      <div class="text">
+        <h1><span>My Covid</span></h1>
+        <h2><span>A Personal Timeline</span></h2>
+      </div>
+    </header>
+    <section class="intro" id="intro">
+      <h3>On <strong>February 25th, 2021</strong>, exactly one year and one day after the <strong>Covid 19</strong> outbreak hit Italy, my wife, my elder son, and <strong>I have been diagnosed with the Virus</strong>. The only family member that tested negative is my 5 years old son. This is a timeline of the events that I lived, with the goal of sharing a different, personal point of view on the evolution of my illness <sup><a href="#n1">1</a></sup>.</h3>
+    </section>
+
+    <section class="notes">
+      <h3>Notes</h3>
+      <p id="#n1"><sup><a href="#intro">1</a></sup> Please, contact your MD for any question about your health: this site is just a narration of what happened to me. I am not a doctor, don't want to pretend to be one, and none of the things that I wrote here are to be considered medical advice of any sort.</p>
+    </section>
+
+    <script>
+      (() => {
+        const init = () => {
+
+        };
+
+        const ready = (fn) => {
+          if (document.readyState != 'loading'){
+            fn();
+          } else {
+            document.addEventListener('DOMContentLoaded', fn);
+          }
+        }
+
+        ready(init);
+      })();
+    </script>
+  </body>
+</html>

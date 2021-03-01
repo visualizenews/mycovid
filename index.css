@@ -1,0 +1,107 @@
+:root {
+  --color-background: #ddd;
+  --color-foreground: #444;
+  --color-accent: #f6fa1a;
+  --color-invert: #006F83;
+  --color-highlight: #fff;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: var(--color-background);
+  color: var(--color-foreground);
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 16px;
+  line-height: 1.75;
+  margin: 0;
+  padding: 0;
+}
+
+.assets {
+  display: none;
+}
+
+h3 {
+  font-size: 18px;
+  font-weight: 600;
+  margin: 0 0 20px 0;
+  text-transform: uppercase;
+}
+
+.header {
+  display: block;
+  height: 150px;
+  margin: 10px 20px 40px 20px;
+  position: relative;
+  width: auto;
+}
+
+.header .square {
+  background: var(--color-accent);
+  display: block;
+  height: 100px;
+  left: 0;
+  position: absolute;
+  top: 50%;
+  transform: translate3d(0, -50%, 0);
+  width: 100px;
+  z-index: 1;
+}
+
+.header .text {
+  left: 50%;
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  transform: translate3d(-50%, -50%, 0);
+  z-index: 2;
+}
+
+.header h1 {
+  font-size: 28px;
+  font-weight: 600;
+  line-height: .9;
+  margin: 0;
+  text-transform: uppercase;
+}
+
+.header h2 {
+  font-size: 18px;
+  font-weight: 300;
+  line-height: .9;
+  margin: 0;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+.intro {
+  display: block;
+  margin: 0 20px 40px 20px;
+}
+
+.intro h3 {
+  font-size: 20px;
+  font-weight: 300;
+  text-transform: none;
+}
+
+.intro h3 strong {
+  background: var(--color-accent);
+  box-shadow: 0 0 0 2px var(--color-accent);
+  font-weight: 400;
+}
+
+sup a {
+  color: var(--color-foreground);
+  font-size: 10px;
+  font-weight: 600;
+  text-decoration: underline;
+}
+
+.notes {
+  display: block;
+  margin: 0 20px 40px 20px;
+}
