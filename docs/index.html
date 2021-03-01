@@ -8,6 +8,7 @@
     <meta name="mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="https://visualize.news/remotes/footer/footer.css" />
     <link rel="preconnect" href="https://fonts.gstatic.com"> 
     <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;600;700&display=swap" rel="stylesheet">
     <title>My Codiv - Visualize News</title>
@@ -73,7 +74,7 @@
       </div>
     </header>
     <section class="intro" id="intro">
-      <h3>On <strong>February 25th, 2021</strong>, exactly one year and one day after the <strong>Covid 19</strong> outbreak hit Italy, my wife, my elder son, and <strong>I have been diagnosed with the Virus</strong>. The only family member that tested negative is my 5 years old son. This is a timeline of the events that I lived, with the goal of sharing a different, personal point of view on the evolution of my illness <sup><a href="#n1">1</a></sup>.</h3>
+      <h3>On <strong>February 25th, 2021</strong>, exactly one year and one day after the <strong>Covid 19</strong> outbreak hit Italy, my wife, my 8 years old son, and <strong>I have been diagnosed with the Virus</strong>. The only family member that tested negative is my 5 years old son. This is a timeline of the events that I lived, with the goal of sharing a different, personal point of view on the evolution of my illness <sup><a href="#n1">1</a></sup>.</h3>
     </section>
 
     <section class="notes">
@@ -81,10 +82,43 @@
       <p id="#n1"><sup><a href="#intro">1</a></sup> Please, contact your MD for any question about your health: this site is just a narration of what happened to me. I am not a doctor, don't want to pretend to be one, and none of the things that I wrote here are to be considered medical advice of any sort.</p>
     </section>
 
+
+    <footer class="page-footer vn">
+      <div class="footer--wrapper">
+        <div class="col" id="footer-corporate">
+          <h3><a href="https://visualize.news" target="_visualize"><img src="https://visualize.news/assets/logo/vn.png" alt="Visualize News Logo"> Visualize News</a></h3>
+        </div>
+        <div class="col">
+          <h3>Copyright</h3>
+          <p>© 2021 <a href="https://visualize.news" target="_visualize">Visualize.News</a> – All rights reserved. This site has been written, designed, and developed by <a href="https://simonelippolis.com" target="_simone">Simone Lippolis</a>.</p>
+          <div  id="footer-legal">
+            <h3>Terms of service</h3>
+            <p>All data and analysis are provided "as-is", without any warranty, implicit or explicit, of their correctness.</p>
+            <h3>Privacy policy</h3>
+            <p>This website does not save any information about you. We do not directly use cookies or other tracking technologies. We do, however, use <a href="https://www.google.com/analytics">Google Analytics</a> for mere statistical reasons. It is possible that <a href="https://www.google.com/analytics">Google Analytics</a> sets cookies or uses other tracking technologies, but this data is not directly accessible by us.</p>
+            <p><strong>No data</strong> (including IP address, Host name, Broswer signature) <strong>is saved for any reason on our servers</strong>.</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
     <script>
       (() => {
-        const init = () => {
+        const footers = () => {
+          fetch('https://visualize.news/remotes/footer/corporate_en.html')
+            .then(response => response.text())
+            .then(content => {
+              document.querySelector('#footer-corporate').innerHTML =content;
+            });
+          fetch('https://visualize.news/remotes/footer/legal_en.html')
+            .then(response => response.text())
+            .then(content => {
+              document.querySelector('#footer-legal').innerHTML =content;
+            });
+        };
 
+        const init = () => {
+          footers();
         };
 
         const ready = (fn) => {
