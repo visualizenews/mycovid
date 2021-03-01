@@ -21,14 +21,36 @@ body {
 }
 
 .assets {
-  display: none;
+  height: 0;
+  overflow: hidden;
+  width: 0;
+}
+
+h2 {
+  font-size: 22px;
+  font-weight: 600;
+  margin: 0 0 20px 0;
+  text-transform: none;
 }
 
 h3 {
   font-size: 18px;
   font-weight: 600;
   margin: 0 0 20px 0;
+}
+
+h4 {
+  font-size: 16px;
+  font-weight: 600;
+  margin: 0 0 20px 0;
   text-transform: uppercase;
+}
+
+sup a {
+  color: var(--color-foreground);
+  font-size: 10px;
+  font-weight: 600;
+  text-decoration: underline;
 }
 
 .header {
@@ -94,15 +116,39 @@ h3 {
   font-weight: 400;
 }
 
-sup a {
-  color: var(--color-foreground);
-  font-size: 10px;
-  font-weight: 600;
-  text-decoration: underline;
+.timeline {
+  display: block;
+  margin: 0px 20px 40px 20px;
+  position: relative;
 }
 
+.timeline h2 {
+  background: var(--color-background);
+  position: sticky;
+  top: 0;
+  z-index: 2;
+}
+
+.timeline-item {
+  margin-bottom: 40px;
+  position: relative;
+}
+
+.timeline-date {
+  background: var(--color-background);
+  position: sticky;
+  top: 38px;
+  z-index: 1;
+}
+
+.timeline-chart {
+}
+
+
+
+
 .notes {
-  border-top: 1px solid var(--color-foreground);
+  border-top: 1px dotted var(--color-foreground);
   display: block;
   font-size: 12px;
   margin: 0px 20px 40px 20px;
