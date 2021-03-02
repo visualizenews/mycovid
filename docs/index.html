@@ -10,7 +10,8 @@
     <link rel="stylesheet" href="index.css" />
     <link rel="stylesheet" href="https://visualize.news/remotes/footer/footer.css" />
     <link rel="preconnect" href="https://fonts.gstatic.com"> 
-    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com"> 
+    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@300&family=Space+Grotesk:wght@300;400;600;700&display=swap" rel="stylesheet">
     <title>My Codiv - Visualize News</title>
   </head>
   <body>
@@ -87,11 +88,13 @@
         <div class="timeline-event">
           <p>Based on our investigation, we think that we might have been exposed to the virus one day between February 19th and 21st. Only 3 days later, on 25th, we'll discover that one person we met during those days was positive, and all the other people were having COVID symptoms.</p>
         </div>
+        <!--
         <div class="timeline-chart">
-          <svg width="100%" height="150" viewport="0 0 100 150">
+          <svg width="100%" height="150" viewport="0 0 100 150" id="investigation">
             <rect x="0" y="0" width="100%" height="100%" stroke="none" fill="url(#stripes)" />
           </svg>
         </div>
+        -->
       </div>
       <div class="timeline-item">
         <div class="timeline-date">
@@ -101,10 +104,7 @@
           <p>As soon as we receive news that at least 1 person we got in touch with during the weekend tested positive, my wife goes pick up the kids from school and takes them directly to the testing facility our local hospital, with the support of Italian Army and Air Force created to speed up the testing activities for children, students, and school personel. I am already feeling "dizzy", and while the kids are getting tested, contact our family doctor and book a swab test for my wife and I in a private clinic.</p>
           <p>In less than an hour we have a first result about the kids: the 8 years old is positive to the rapid test (and thus will receive a second PCR test), while the younger is negative. That same afternoon, at 4 pm, my wife and I are tested. The result will be available the following day.</p>
         </div>
-        <div class="timeline-chart">
-          <svg width="100%" height="150" viewport="0 0 100 150">
-            <rect x="0" y="0" width="100%" height="100%" stroke="none" fill="url(#stripes)" />
-          </svg>
+        <div class="timeline-chart" data-chart="symptoms" data-id="2021-02-25">
         </div>
       </div>
     </section>
@@ -113,7 +113,6 @@
       <h4>Notes</h4>
       <p id="#n1"><sup><a href="#a1">1</a></sup> Please, contact your MD for any question about your health: this site is just a narration of what happened to me. I am not a doctor, don't want to pretend to be one, and none of the things that I wrote here are to be considered medical advice of any sort.</p>
     </section>
-
 
     <footer class="page-footer vn">
       <div class="footer--wrapper">
@@ -134,35 +133,7 @@
       </div>
     </footer>
 
-    <script>
-      (() => {
-        const footers = () => {
-          fetch('https://visualize.news/remotes/footer/corporate_en.html')
-            .then(response => response.text())
-            .then(content => {
-              document.querySelector('#footer-corporate').innerHTML =content;
-            });
-          fetch('https://visualize.news/remotes/footer/legal_en.html')
-            .then(response => response.text())
-            .then(content => {
-              document.querySelector('#footer-legal').innerHTML =content;
-            });
-        };
-
-        const init = () => {
-          footers();
-        };
-
-        const ready = (fn) => {
-          if (document.readyState != 'loading'){
-            fn();
-          } else {
-            document.addEventListener('DOMContentLoaded', fn);
-          }
-        }
-
-        ready(init);
-      })();
-    </script>
+    <script src="https://unpkg.com/chrt@0.0.26/dist/chrt.min.js"></script>
+    <script src="./script.js"></script>
   </body>
 </html>

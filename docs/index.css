@@ -4,6 +4,7 @@
   --color-accent: #f6fa1a;
   --color-invert: #006F83;
   --color-highlight: #fff;
+  --color-alternate: #00F4F9;
 }
 
 * {
@@ -105,7 +106,7 @@ sup a {
 }
 
 .intro h3 {
-  font-size: 20px;
+  font-size: 18px;
   font-weight: 300;
   text-transform: none;
 }

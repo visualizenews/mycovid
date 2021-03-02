@@ -1,0 +1,122 @@
+[
+  {
+    "date": "2021-02-25",
+    "symptoms": [
+      { "head": 3 },
+      { "belly": 0 },
+      { "fatigue": 3 },
+      { "cough": 0 },
+      { "fever": 1 },
+      { "unrest": 0 },
+      { "saturation": 3 },
+      { "sneezing": 0 },
+      { "bloodPressure": 3 }
+    ],
+    "drugs": [ "cortisone", "vitamin c", "vitamin d", "lactoferrin", "ketoprofen" ],
+    "contacts": [
+      { "md": 2 },
+      { "pediatrician": 1 },
+      { "ats": 0 }
+    ]
+  },
+  {
+    "date": "2021-02-26",
+    "symptoms": [
+      { "head": 1 },
+      { "belly": 0 },
+      { "fatigue": 3 },
+      { "cough": 1 },
+      { "fever": 0 },
+      { "unrest": 0 },
+      { "saturation": 3 },
+      { "sneezing": 0 },
+      { "bloodPressure": 0 }
+    ],
+    "drugs": [ "cortisone", "vitamin c", "vitamin d", "lactoferrin", "azithromycin", "ketoprofen" ],
+    "contacts": [
+      { "md": 1 },
+      { "pediatrician": 1 },
+      { "ats": 3 }
+    ]
+  },
+  {
+    "date": "2021-02-27",
+    "symptoms": [
+      { "head": 0 },
+      { "belly": 1 },
+      { "fatigue": 2 },
+      { "cough": 1 },
+      { "fever": 0 },
+      { "unrest": 2 },
+      { "saturation": 2 },
+      { "sneezing": 0 },
+      { "bloodPressure": 0 }
+    ],
+    "drugs": [ "cortisone", "vitamin c", "vitamin d", "lactoferrin", "azithromycin", "ketoprofen" ],
+    "contacts": [
+      { "md": 1 },
+      { "pediatrician": 0 },
+      { "ats": 0 }
+    ]
+  },
+  {
+    "date": "2021-02-28",
+    "symptoms": [
+      { "head": 0 },
+      { "belly": 0 },
+      { "fatigue": 2 },
+      { "cough": 1 },
+      { "fever": 0 },
+      { "unrest": 3 },
+      { "saturation": 2 },
+      { "sneezing": 2 },
+      { "bloodPressure": 0 }
+    ],
+    "drugs": [ "cortisone", "vitamin c", "vitamin d", "lactoferrin", "azithromycin", "ketoprofen" ],
+    "contacts": [
+      { "md": 0 },
+      { "pediatrician": 0 },
+      { "ats": 0 }
+    ]
+  },
+  {
+    "date": "2021-03-01",
+    "symptoms": [
+      { "head": 0 },
+      { "belly": 0 },
+      { "fatigue": 2 },
+      { "cough": 1 },
+      { "fever": 0 },
+      { "unrest": 3 },
+      { "saturation": 1 },
+      { "sneezing": 2 },
+      { "bloodPressure": 0 }
+    ],
+    "drugs": [ "cortisone", "vitamin c", "vitamin d", "lactoferrin", "ketoprofen" ],
+    "contacts": [
+      { "md": 0 },
+      { "pediatrician": 0 },
+      { "ats": 0 }
+    ]
+  },
+  {
+    "date": "2021-03-02",
+    "symptoms": [
+      { "head": 0 },
+      { "belly": 0 },
+      { "fatigue": 2 },
+      { "cough": 1 },
+      { "fever": 0 },
+      { "unrest": 3 },
+      { "saturation": 1 },
+      { "sneezing": 1 },
+      { "bloodPressure": 0 }
+    ],
+    "drugs": [ "cortisone", "vitamin c", "vitamin d", "lactoferrin", "ketoprofen" ],
+    "contacts": [
+      { "md": 0 },
+      { "pediatrician": 0 },
+      { "ats": 0 }
+    ]
+  }
+]
