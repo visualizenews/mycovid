@@ -47,6 +47,10 @@ h4 {
   text-transform: uppercase;
 }
 
+p {
+  margin: 0 0 20px 0;
+}
+
 sup a {
   color: var(--color-foreground);
   font-size: 10px;
@@ -143,10 +147,76 @@ sup a {
 }
 
 .timeline-chart {
+  display: block;
 }
 
+.timeline-chart .chart {
+  background: var(--color-accent);
+  display: block;
+  margin: 20px 0 60px 0;
+  position: relative;
+  width: 100%;
+}
 
+.timeline-chart .chart-block {
+  height: auto;
+  position: absolute;
+}
 
+.timeline-chart .chart-block .normal,
+.timeline-chart .chart-block .good,
+.timeline-chart .chart-block .bad,
+.timeline-chart .chart-block .worst {
+  display: block;
+  height: 100%;
+  width: 100%;
+}
+
+.timeline-chart .chart-block svg {
+  height: 100%;
+  width: 100%;
+}
+
+.timeline-chart .chart-label {
+  font-family: 'Source Code Pro', monospace;
+  font-size: 10px;
+  font-weight: 300;
+  position: absolute;
+  text-align: left;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+.timeline-chart .chart-bar {
+  background: var(--color-accent);
+  border-bottom: 1px solid var(--color-foreground);
+  border-right: 1px solid var(--color-foreground);
+  border-top: 1px solid var(--color-foreground);
+  display: block;
+  position: absolute;
+}
+
+.timeline-chart .chart-legend {
+  display: flex;
+  height: 20px;
+  line-height: 20px;
+  position: absolute;
+  right: 0;
+  top: 100%;
+  width: auto;
+}
+
+.timeline-chart .chart-legend span {
+  flex: 0 0 50%;
+  font-family: 'Source Code Pro', monospace;
+  font-size: 10px;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+
+.timeline-chart .chart-legend span:last-child {
+  text-align: right;
+}
 
 .notes {
   border-top: 1px dotted var(--color-foreground);

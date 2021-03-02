@@ -12,7 +12,7 @@
       { "sneezing": 0 },
       { "bloodPressure": 3 }
     ],
-    "drugs": [ "cortisone", "vitamin c", "vitamin d", "lactoferrin", "ketoprofen" ],
+    "drugs": [ "aspirine", "vitamin c", "vitamin d", "lactoferrin" ],
     "contacts": [
       { "md": 2 },
       { "pediatrician": 1 },
