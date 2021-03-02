@@ -135,7 +135,7 @@ sup a {
 }
 
 .timeline-item {
-  margin-bottom: 40px;
+  margin-bottom: 80px;
   position: relative;
 }
 
@@ -145,6 +145,15 @@ sup a {
   top: 38px;
   z-index: 1;
 }
+
+.timeline-event,
+.timeline-chart,
+.timeline-drugs,
+.timeline-contacts {
+  margin-bottom: 60px;
+}
+
+/* Charts */
 
 .timeline-chart {
   display: block;
@@ -180,7 +189,7 @@ sup a {
 .timeline-chart .chart-label {
   font-family: 'Source Code Pro', monospace;
   font-size: 10px;
-  font-weight: 300;
+  font-weight: 400;
   position: absolute;
   text-align: left;
   text-transform: uppercase;
@@ -210,13 +219,112 @@ sup a {
   flex: 0 0 50%;
   font-family: 'Source Code Pro', monospace;
   font-size: 10px;
-  font-weight: 300;
+  font-weight: 400;
   text-transform: uppercase;
 }
 
 .timeline-chart .chart-legend span:last-child {
   text-align: right;
 }
+
+/* Drugs */
+
+.timeline-drugs ul,
+.timeline-drugs li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.timeline-drugs .drug {
+  background: var(--color-highlight);
+  border-radius: 10px;
+  display: inline-block;
+  height: 20px;
+  line-height: 20px;
+  margin-right: 5px;
+}
+
+.timeline-drugs .drug span {
+  display: block;
+  font-family: 'Source Code Pro', monospace;
+  font-size: 10px;
+  font-weight: 400;
+  height: 20px;
+  line-height: 20px;
+  padding: 0 5px;
+  position: relative;
+  text-transform: uppercase;
+}
+
+.timeline-drugs .drug span::after {
+  background: var(--color-accent);
+  border-radius: 0 10px 10px 0;
+  content: '';
+  height: 20px;
+  left: 50%;
+  mix-blend-mode: multiply;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: auto;
+}
+
+.timeline-drugs .drug span::before {
+  background: var(--color-background);
+  content: '';
+  height: 20px;
+  left: 50%;
+  mix-blend-mode: multiply;
+  position: absolute;
+  top: 0;
+  transform: translate3d(-50%, 0, 0);
+  width: 2px;
+}
+
+/* Contacts */
+
+.timeline-contacts ul,
+.timeline-contacts li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.timeline-contacts .contact {
+  background: var(--color-highlight);
+  border-radius: 10px;
+  display: inline-block;
+  height: 20px;
+  line-height: 20px;
+  margin-right: 5px;
+}
+
+.timeline-contacts .contact span {
+  display: block;
+  font-family: 'Source Code Pro', monospace;
+  font-size: 10px;
+  font-weight: 400;
+  height: 20px;
+  line-height: 20px;
+  padding: 0 0 0 5px;
+  position: relative;
+  text-transform: uppercase;
+}
+
+.timeline-contacts .contact em {
+  background: var(--color-invert);
+  border-radius: 10px;
+  color: var(--color-highlight);
+  display: inline-block;
+  font-style: normal;
+  padding: 0 5px;
+  text-align: center;
+  width: 20px;
+}
+
+
+/* Notes */
 
 .notes {
   border-top: 1px dotted var(--color-foreground);
@@ -225,6 +333,8 @@ sup a {
   margin: 0px 20px 40px 20px;
   padding-top: 40px;
 }
+
+/* Footer */
 
 .page-footer {
   background: var(--color-foreground);

@@ -10,13 +10,13 @@
       { "unrest": 0 },
       { "saturation": 3 },
       { "sneezing": 0 },
-      { "bloodPressure": 3 }
+      { "bloodPressure": 3 },
+      { "smellAndTaste" : 0 }
     ],
     "drugs": [ "aspirine", "vitamin c", "vitamin d", "lactoferrin" ],
     "contacts": [
-      { "md": 2 },
-      { "pediatrician": 1 },
-      { "ats": 0 }
+      { "gp": 2 },
+      { "pediatrician": 1 }
     ]
   },
   {
@@ -30,11 +30,12 @@
       { "unrest": 0 },
       { "saturation": 3 },
       { "sneezing": 0 },
-      { "bloodPressure": 0 }
+      { "bloodPressure": 0 },
+      { "smellAndTaste" : 0 }
     ],
     "drugs": [ "cortisone", "vitamin c", "vitamin d", "lactoferrin", "azithromycin", "ketoprofen" ],
     "contacts": [
-      { "md": 1 },
+      { "gp": 1 },
       { "pediatrician": 1 },
       { "ats": 3 }
     ]
@@ -50,13 +51,12 @@
       { "unrest": 2 },
       { "saturation": 2 },
       { "sneezing": 0 },
-      { "bloodPressure": 0 }
+      { "bloodPressure": 0 },
+      { "smellAndTaste" : 0 }
     ],
     "drugs": [ "cortisone", "vitamin c", "vitamin d", "lactoferrin", "azithromycin", "ketoprofen" ],
     "contacts": [
-      { "md": 1 },
-      { "pediatrician": 0 },
-      { "ats": 0 }
+      { "gp": 1 }
     ]
   },
   {
@@ -70,14 +70,10 @@
       { "unrest": 3 },
       { "saturation": 2 },
       { "sneezing": 2 },
-      { "bloodPressure": 0 }
+      { "bloodPressure": 0 },
+      { "smellAndTaste" : 1 }
     ],
-    "drugs": [ "cortisone", "vitamin c", "vitamin d", "lactoferrin", "azithromycin", "ketoprofen" ],
-    "contacts": [
-      { "md": 0 },
-      { "pediatrician": 0 },
-      { "ats": 0 }
-    ]
+    "drugs": [ "cortisone", "vitamin c", "vitamin d", "lactoferrin", "azithromycin", "ketoprofen" ]
   },
   {
     "date": "2021-03-01",
@@ -90,13 +86,12 @@
       { "unrest": 3 },
       { "saturation": 1 },
       { "sneezing": 2 },
-      { "bloodPressure": 0 }
+      { "bloodPressure": 0 },
+      { "smellAndTaste" : 2 }
     ],
     "drugs": [ "cortisone", "vitamin c", "vitamin d", "lactoferrin", "ketoprofen" ],
     "contacts": [
-      { "md": 0 },
-      { "pediatrician": 0 },
-      { "ats": 0 }
+      { "gp": 1 }
     ]
   },
   {
@@ -110,11 +105,12 @@
       { "unrest": 3 },
       { "saturation": 1 },
       { "sneezing": 1 },
-      { "bloodPressure": 0 }
+      { "bloodPressure": 0 },
+      { "smellAndTaste" : 3 }
     ],
     "drugs": [ "cortisone", "vitamin c", "vitamin d", "lactoferrin", "ketoprofen" ],
     "contacts": [
-      { "md": 0 },
+      { "gp": 0 },
       { "pediatrician": 0 },
       { "ats": 0 }
     ]

@@ -12,11 +12,15 @@
       "saturation": "O2 Saturation",
       "sneezing": "Sneezing",
       "bloodPressure": "Blood Pressure",
+      "smellAndTaste": "Smell & Taste",
+      "gp": "G.P.",
+      "pediatrician": "Pediatrician",
+      "ats": "Local Health Authority",
     },
     chart: {
       barHeight: 20,
       lineHeight: 30,
-      margins: [5, 5, 5, 50],
+      margins: [5, 5, 5, 60],
       states: ['normal', 'good', 'bad', 'worst'],
       templates: {
         normal: '<div class="normal"><svg width="100%" height="100%"><rect x="0" y="0" width="100%" height="100%" stroke="none" fill="url(#dots)" /></svg></div>',
@@ -29,9 +33,32 @@
 
   let data = [];
 
+  const drawContacts = (container, id) => {
+    const thisData = data.find(d => d.date === id);
+    let html = `<ul>`;
+    thisData.contacts.forEach((d) => {
+      const keys = Object.keys(d);
+      html += `<li class="contact"><span>${config.mapping[keys[0]]} <em>${d[keys[0]]}</em></span></li>`;
+    });
+    html += '</ul>';
+    container.innerHTML = html;
+  }
+
+  const contacts = () => {
+    const containers = document.querySelectorAll('[data-chart="contacts"]');
+    containers.forEach((c) => {
+      drawContacts(c, c.getAttribute('data-id'));
+    });
+  };
+
   const drawDrugs = (container, id) => {
     const thisData = data.find(d => d.date === id);
-    console.log(thisData);
+    let html = `<ul>`;
+    thisData.drugs.sort((a, b) => (a > b) ? 1 : -1).forEach((d) => {
+      html += `<li class="drug"><span>${d}</span></li>`;
+    });
+    html += '</ul>';
+    container.innerHTML = html;
   };
 
   const drugs = () => {
@@ -41,7 +68,7 @@
     });
   }
 
-  const drawSymptoms = (container, id, w, h) => {
+  const drawSymptoms = (container, id, w) => {
     const thisData = data.find(d => d.date === id);
     const chartData = [];
     thisData.symptoms.forEach((d) => {
@@ -51,11 +78,11 @@
         y: config.mapping[k[0]],
       });
     });
-    console.log(data, id, thisData, chartData);
     chartData.sort((a, b) => {
       return a.y > b.y ? 1 : -1
     });
     if (chartData && chartData.length) {
+      const w = container.offsetWidth;
       let html = '';
       container.style.height = `${(chartData.length * config.chart.lineHeight) + config.chart.margins[0] + config.chart.margins[2]}px`;
       const barsWidth = Math.round((w - config.chart.margins[1] - config.chart.margins[3]) / config.chart.states.length);
@@ -78,7 +105,25 @@
     });
   };
 
-  const investigation = () => {
+  const details = () => {
+    const days = document.querySelectorAll('[data-id]');
+    days.forEach((d) => {
+      const id = d.getAttribute('data-id');
+      if (id) {
+        const thisData = data.find(d => d.date === id);
+        if (thisData) {
+          if (thisData.symptoms) {
+            d.innerHTML += `<div class="timeline-chart"><h3>My Symptoms</h3><div class="chart" data-chart="symptoms" data-id="${id}"></div></div>`;
+          }
+          if (thisData.drugs) {
+            d.innerHTML += `<div class="timeline-drugs"><h3>Drugs I took</h3><div class="drugs" data-chart="drugs" data-id="${id}"></div></div>`;
+          }
+          if (thisData.contacts) {
+            d.innerHTML += `<div class="timeline-contacts"><h3>Phone calls I had</h3><div class="contacts" data-chart="contacts" data-id="${id}"></div></div>`;
+          }
+        }
+      }
+    });
   };
 
   const footers = () => {
@@ -99,9 +144,10 @@
       .then(response => response.json())
       .then(d => {
         data = d;
-        investigation();
+        details();
         symptoms();
         drugs();
+        contacts();
       }
     );
     footers();
