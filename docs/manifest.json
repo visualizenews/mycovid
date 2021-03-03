@@ -1,5 +1,6 @@
 {
- "name": "App",
+ "name": "My Covid",
+ "version": 0.1,
  "icons": [
   {
    "src": "\/icons\/android-icon-36x36.png",
