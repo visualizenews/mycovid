@@ -153,6 +153,11 @@ sup a {
   margin-bottom: 60px;
 }
 
+.timeline-event strong {
+  box-shadow: inset 0 -10px 0 0 var(--color-accent);
+  font-weight: 600;
+}
+
 /* Charts */
 
 .timeline-chart {
