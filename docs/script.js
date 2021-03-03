@@ -1,6 +1,6 @@
 
 (() => {
-  const pattern = 'dots';
+  const pattern = 'stripes';
   const config = {
     source: "./symptoms.json",
     mapping: {
@@ -34,6 +34,16 @@
   };
 
   let data = [];
+
+  const ogimage = () => {
+    const tag = document.querySelector('[data-chart="ogimage"]');
+    if (tag) {
+      const id = data[data.length - 1].date;
+      tag.innerHTML = `<div class="chart" data-chart="symptoms" data-id="${id}"></div>`;
+      const d = new Date(id);
+      document.querySelector('#today').innerHTML = new Intl.DateTimeFormat('en-US', { dateStyle: 'long' }).format(d);
+    }
+  };
 
   const drawContacts = (container, id) => {
     const thisData = data.find(d => d.date === id);
@@ -133,16 +143,18 @@
   };
 
   const footers = () => {
-    fetch('https://visualize.news/remotes/footer/corporate_en.html')
-      .then(response => response.text())
-      .then(content => {
-        document.querySelector('#footer-corporate').innerHTML =content;
-      });
-    fetch('https://visualize.news/remotes/footer/legal_en.html')
-      .then(response => response.text())
-      .then(content => {
-        document.querySelector('#footer-legal').innerHTML =content;
-      });
+    if (document.querySelector('.page-footer')) {
+      fetch('https://visualize.news/remotes/footer/corporate_en.html')
+        .then(response => response.text())
+        .then(content => {
+          document.querySelector('#footer-corporate').innerHTML =content;
+        });
+      fetch('https://visualize.news/remotes/footer/legal_en.html')
+        .then(response => response.text())
+        .then(content => {
+          document.querySelector('#footer-legal').innerHTML =content;
+        });
+    }
   };
 
   const init = () => {
@@ -151,6 +163,7 @@
       .then(d => {
         data = d;
         details();
+        ogimage();
         symptoms();
         drugs();
         contacts();

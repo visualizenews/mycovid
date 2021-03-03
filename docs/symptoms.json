@@ -133,7 +133,8 @@
     ],
     "drugs": [ "cortisone", "vitamin c", "vitamin d", "vitamin k", "azithromycin", "lactoferrin", "ketoprofen" ],
     "contacts": [
-      { "pediatrician": 1 }
+      { "pediatrician": 1 },
+      { "gp": 1 }
     ]
   }
 ]

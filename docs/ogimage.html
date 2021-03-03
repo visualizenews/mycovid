@@ -1,0 +1,214 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+
+    <link rel="stylesheet" href="index.css" media="screen"/>
+    <link rel="stylesheet" href="index-m.css" media="screen and (min-width: 768px)"/>
+    <link rel="stylesheet" href="index-l.css" media="screen and (min-width: 1024px)"/>
+    <link rel="stylesheet" href="index-xl.css" media="screen and (min-width: 1366px)"/>
+    <link rel="stylesheet" href="https://visualize.news/remotes/footer/footer.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com"> 
+    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@400&family=Space+Grotesk:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <title>OG Image - My Codiv - Visualize News</title>
+  </head>
+  <body style="margin: 0; padding: 0; width: 1200px; height: 627px; overflow: hidden;">
+    
+    <div style="width: 1200px; height: 627px; overflow: hidden; padding: 20px; margin:0;" class="timeline-chart">
+      <header class="header" style="margin-bottom: 40px;">
+        <div class="square"></div>
+        <div class="text">
+          <h1><span>My Covid</span></h1>
+          <h2><span>My Symptoms on <span id="today"></span></span></h2>
+        </div>
+      </header>
+      <div data-chart="ogimage"></div>
+    </div>
+
+    <div class="assets">
+      <svg>
+        <defs>
+          <pattern
+            id="stripes"
+            width="5px"
+            height="5px"
+            patternUnits="userSpaceOnUse"
+            patternContentUnits="userSpaceOnUse"
+            viewBox="0 0 140 140"
+            preserveAspectRatio="none"
+            patternTransform="rotate(-45)"
+          >
+            <line
+              x1="0"
+              x2="140"
+              y1="70"
+              y2="70"
+              stroke-width="20"
+              stroke="#444"
+            />
+          </pattern>
+          <pattern
+            id="stripes2"
+            width="5px"
+            height="5px"
+            patternUnits="userSpaceOnUse"
+            patternContentUnits="userSpaceOnUse"
+            viewBox="0 0 100 100"
+            preserveAspectRatio="none"
+            patternTransform="rotate(-45)"
+          >
+            <line
+              x1="0"
+              x2="100"
+              y1="50"
+              y2="50"
+              stroke-width="20"
+              stroke="#444"
+            />
+          </pattern>
+          <pattern
+            id="stripes3"
+            width="5px"
+            height="5px"
+            patternUnits="userSpaceOnUse"
+            patternContentUnits="userSpaceOnUse"
+            viewBox="0 0 60 60"
+            preserveAspectRatio="none"
+            patternTransform="rotate(-45)"
+          >
+            <line
+              x1="0"
+              x2="60"
+              y1="30"
+              y2="30"
+              stroke-width="20"
+              stroke="#444"
+            />
+          </pattern>
+          <pattern
+            id="stripes4"
+            width="5px"
+            height="5px"
+            patternUnits="userSpaceOnUse"
+            patternContentUnits="userSpaceOnUse"
+            viewBox="0 0 40 40"
+            preserveAspectRatio="none"
+            patternTransform="rotate(-45)"
+          >
+            <line
+              x1="0"
+              x2="40"
+              y1="20"
+              y2="20"
+              stroke-width="20"
+              stroke="#444"
+            />
+          </pattern>
+          <pattern
+            id="stripes5"
+            width="5px"
+            height="5px"
+            patternUnits="userSpaceOnUse"
+            patternContentUnits="userSpaceOnUse"
+            viewBox="0 0 50 50"
+            preserveAspectRatio="none"
+            patternTransform="rotate(-45)"
+          >
+            <rect
+              x="0"
+              y="0"
+              width="100"
+              height="100"
+              fill="#444"
+              stroke="none"
+            />
+            <line
+              x1="0"
+              x2="100"
+              y1="50"
+              y2="50"
+              stroke-width="25"
+              stroke="#fff"
+            />
+          </pattern>
+          <pattern
+            id="dots"
+            width="5px"
+            height="5px"
+            patternUnits="userSpaceOnUse"
+            patternContentUnits="userSpaceOnUse"
+            viewBox="0 0 50 50"
+            preserveAspectRatio="none"
+            patternTransform="rotate(0)"
+          >
+            <circle
+              cx="25"
+              cy="25"
+              r="5"
+              fill="#444"
+              stroke="none"
+            />
+          </pattern>
+          <pattern
+            id="dots2"
+            width="5px"
+            height="5px"
+            patternUnits="userSpaceOnUse"
+            patternContentUnits="userSpaceOnUse"
+            viewBox="0 0 30 30"
+            preserveAspectRatio="none"
+            patternTransform="rotate(0)"
+          >
+            <circle
+              cx="15"
+              cy="15"
+              r="5"
+              fill="#444"
+              stroke="none"
+            />
+          </pattern>
+          <pattern
+            id="dots3"
+            width="5px"
+            height="5px"
+            patternUnits="userSpaceOnUse"
+            patternContentUnits="userSpaceOnUse"
+            viewBox="0 0 20 20"
+            preserveAspectRatio="none"
+            patternTransform="rotate(0)"
+          >
+            <circle
+              cx="10"
+              cy="10"
+              r="5"
+              fill="#444"
+              stroke="none"
+            />
+          </pattern>
+          <pattern
+            id="dots4"
+            width="5px"
+            height="5px"
+            patternUnits="userSpaceOnUse"
+            patternContentUnits="userSpaceOnUse"
+            viewBox="0 0 15 15"
+            preserveAspectRatio="none"
+            patternTransform="rotate(0)"
+          >
+            <circle
+              cx="7.5"
+              cy="7.5"
+              r="5"
+              fill="#444"
+              stroke="none"
+            />
+          </pattern>
+        </defs>
+      </svg>
+    </div>
+
+    <script src="https://unpkg.com/chrt@0.0.27/dist/chrt.min.js"></script>
+    <script src="./script.js"></script>
+  </body>
+</html>
