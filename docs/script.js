@@ -1,5 +1,6 @@
 
 (() => {
+  const pattern = 'dots';
   const config = {
     source: "./symptoms.json",
     mapping: {
@@ -13,6 +14,7 @@
       "sneezing": "Sneezing",
       "bloodPressure": "Blood Pressure",
       "smellAndTaste": "Smell & Taste",
+      "throatAche": "Throat Ache",
       "gp": "G.P.",
       "pediatrician": "Pediatrician",
       "ats": "Local Health Authority",
@@ -23,10 +25,10 @@
       margins: [5, 5, 5, 60],
       states: ['normal', 'good', 'bad', 'worst'],
       templates: {
-        normal: '<div class="normal"><svg width="100%" height="100%"><rect x="0" y="0" width="100%" height="100%" stroke="none" fill="url(#dots)" /></svg></div>',
-        good: '<div class="good"><svg width="100%" height="100%"><rect x="0" y="0" width="100%" height="100%" stroke="none" fill="url(#dots2)" /></svg></div>',
-        bad: '<div class="bad"><svg width="100%" height="100%"><rect x="0" y="0" width="100%" height="100%" stroke="none" fill="url(#dots3)" /></svg></div>',
-        worst: '<div class="worst"><svg width="100%" height="100%"><rect x="0" y="0" width="100%" height="100%" stroke="none" fill="url(#dots4)" /></svg></div>',
+        normal: `<div class="normal"><svg width="100%" height="100%"><rect x="0" y="0" width="100%" height="100%" stroke="none" fill="url(#${pattern})" /></svg></div>`,
+        good: `<div class="good"><svg width="100%" height="100%"><rect x="0" y="0" width="100%" height="100%" stroke="none" fill="url(#${pattern}2)" /></svg></div>`,
+        bad: `<div class="bad"><svg width="100%" height="100%"><rect x="0" y="0" width="100%" height="100%" stroke="none" fill="url(#${pattern}3)" /></svg></div>`,
+        worst: `<div class="worst"><svg width="100%" height="100%"><rect x="0" y="0" width="100%" height="100%" stroke="none" fill="url(#${pattern}4)" /></svg></div>`,
       }
     }
   };
@@ -91,7 +93,7 @@
       });
       chartData.forEach((d, i) => {
         html += `<div class="chart-bar" style="left: ${config.chart.margins[3]}px; top: ${config.chart.margins[0] + (config.chart.lineHeight * i) + (config.chart.lineHeight - config.chart.barHeight) / 2}px; height: ${config.chart.barHeight}px; width: ${(barsWidth * d.x) + Math.round(barsWidth / 2)}px;"></div>`;
-        html += `<div class="chart-label" style="left: ${config.chart.margins[1]}px; top: ${config.chart.margins[0] + (config.chart.lineHeight * i)}px; height: ${config.chart.lineHeight}px; line-height: ${config.chart.lineHeight}px; width: ${config.chart.margins[3]}px;">${d.y}</div>`;
+        html += `<div class="chart-label label-${d.x}" style="left: ${config.chart.margins[1]}px; top: ${config.chart.margins[0] + (config.chart.lineHeight * i)}px; height: ${config.chart.lineHeight}px; line-height: ${config.chart.lineHeight}px; width: ${config.chart.margins[3]}px;">${d.y}</div>`;
       });
       html += `<div class="chart-legend" style="left: ${config.chart.margins[3]}px; right: ${config.chart.margins[1]}px;"><span>← Normal</span><span>Bad →</span></div>`;
       container.innerHTML = html;

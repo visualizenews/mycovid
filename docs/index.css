@@ -160,7 +160,7 @@ sup a {
 }
 
 .timeline-chart .chart {
-  background: var(--color-accent);
+  background: var(--color-highlight); /*var(--color-accent);*/
   display: block;
   margin: 20px 0 60px 0;
   position: relative;
@@ -192,17 +192,26 @@ sup a {
   font-weight: 400;
   position: absolute;
   text-align: left;
+  text-shadow: 1px 1px 0 var(--color-accent);
   text-transform: uppercase;
   white-space: nowrap;
 }
 
+.timeline-chart .chart-label.label-0 {
+  text-shadow: none;
+}
+
 .timeline-chart .chart-bar {
-  background: var(--color-accent);
+  background: var(--color-highlight); /*var(--color-accent);*/
   border-bottom: 1px solid var(--color-foreground);
   border-right: 1px solid var(--color-foreground);
   border-top: 1px solid var(--color-foreground);
   display: block;
   position: absolute;
+
+  box-shadow: inset -1px 0 0 0 var(--color-accent),
+    inset 0 -1px 0 0 var(--color-accent),
+    inset 0 1px 0 0 var(--color-accent);
 }
 
 .timeline-chart .chart-legend {

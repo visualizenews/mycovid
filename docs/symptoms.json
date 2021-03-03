@@ -11,7 +11,8 @@
       { "saturation": 3 },
       { "sneezing": 0 },
       { "bloodPressure": 3 },
-      { "smellAndTaste" : 0 }
+      { "smellAndTaste" : 0 },
+      { "throatAche" : 0 }
     ],
     "drugs": [ "aspirine", "vitamin c", "vitamin d", "lactoferrin" ],
     "contacts": [
@@ -31,9 +32,10 @@
       { "saturation": 3 },
       { "sneezing": 0 },
       { "bloodPressure": 0 },
-      { "smellAndTaste" : 0 }
+      { "smellAndTaste" : 0 },
+      { "throatAche" : 0 }
     ],
-    "drugs": [ "cortisone", "vitamin c", "vitamin d", "lactoferrin", "azithromycin", "ketoprofen" ],
+    "drugs": [ "cortisone", "vitamin c", "vitamin d", "vitamin k", "lactoferrin", "azithromycin", "ketoprofen" ],
     "contacts": [
       { "gp": 1 },
       { "pediatrician": 1 },
@@ -52,9 +54,10 @@
       { "saturation": 2 },
       { "sneezing": 0 },
       { "bloodPressure": 0 },
-      { "smellAndTaste" : 0 }
+      { "smellAndTaste" : 0 },
+      { "throatAche" : 0 }
     ],
-    "drugs": [ "cortisone", "vitamin c", "vitamin d", "lactoferrin", "azithromycin", "ketoprofen" ],
+    "drugs": [ "cortisone", "vitamin c", "vitamin d", "vitamin k", "lactoferrin", "azithromycin", "ketoprofen" ],
     "contacts": [
       { "gp": 1 }
     ]
@@ -71,9 +74,10 @@
       { "saturation": 2 },
       { "sneezing": 2 },
       { "bloodPressure": 0 },
-      { "smellAndTaste" : 1 }
+      { "smellAndTaste" : 1 },
+      { "throatAche" : 0 }
     ],
-    "drugs": [ "cortisone", "vitamin c", "vitamin d", "lactoferrin", "azithromycin", "ketoprofen" ]
+    "drugs": [ "cortisone", "vitamin c", "vitamin d", "vitamin k", "lactoferrin", "azithromycin", "ketoprofen" ]
   },
   {
     "date": "2021-03-01",
@@ -87,9 +91,10 @@
       { "saturation": 1 },
       { "sneezing": 2 },
       { "bloodPressure": 0 },
-      { "smellAndTaste" : 2 }
+      { "smellAndTaste" : 2 },
+      { "throatAche" : 0 }
     ],
-    "drugs": [ "cortisone", "vitamin c", "vitamin d", "lactoferrin", "ketoprofen" ],
+    "drugs": [ "cortisone", "vitamin c", "vitamin d", "vitamin k", "lactoferrin", "ketoprofen" ],
     "contacts": [
       { "gp": 1 }
     ]
@@ -106,9 +111,10 @@
       { "saturation": 1 },
       { "sneezing": 1 },
       { "bloodPressure": 0 },
-      { "smellAndTaste" : 3 }
+      { "smellAndTaste" : 3 },
+      { "throatAche" : 0 }
     ],
-    "drugs": [ "cortisone", "vitamin c", "vitamin d", "lactoferrin", "ketoprofen" ]
+    "drugs": [ "cortisone", "vitamin c", "vitamin d", "vitamin k", "lactoferrin", "ketoprofen" ]
   },
   {
     "date": "2021-03-03",
@@ -122,9 +128,10 @@
       { "saturation": 2 },
       { "sneezing": 1 },
       { "bloodPressure": 0 },
-      { "smellAndTaste" : 3 }
+      { "smellAndTaste" : 3 },
+      { "throatAche" : 1 }
     ],
-    "drugs": [ "cortisone", "vitamin c", "vitamin d", "azithromycin", "lactoferrin", "ketoprofen" ],
+    "drugs": [ "cortisone", "vitamin c", "vitamin d", "vitamin k", "azithromycin", "lactoferrin", "ketoprofen" ],
     "contacts": [
       { "pediatrician": 1 }
     ]
