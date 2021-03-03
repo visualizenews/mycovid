@@ -1,5 +1,14 @@
+.header {
+  margin-bottom: 120px;
+}
+
+.intro {
+  margin-bottom: 160px;
+  width: 680px;
+}
+
 .timeline {
-  width: 960px;
+  width: 680px;
 }
 
 .timeline-detail {
@@ -7,12 +16,37 @@
 }
 
 .timeline-chart {
-  flex: 0 0 50%;
+  flex: 0 0 60%;
   padding-right: 20px;
 }
 
 .timeline-details {
   display: block;
-  flex: 0 0 50%;
+  flex: 0 0 40%;
   padding-left: 20px;
+}
+
+.notes {
+  width: 680px;
+}
+
+.page-footer .footer--wrapper {
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  width: 720px;
+}
+
+.page-footer .col {
+  flex: 0 0 50%;
+}
+
+.page-footer .col:first-child {
+  order: 2;
+  padding-left: 20px;
+}
+
+.page-footer .col:last-child {
+  order: 1;
+  padding-right: 20px;
 }

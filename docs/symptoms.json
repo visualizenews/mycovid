@@ -116,7 +116,7 @@
       { "head": 0 },
       { "belly": 0 },
       { "fatigue": 2 },
-      { "cough": 1 },
+      { "cough": 0 },
       { "fever": 0 },
       { "unrest": 3 },
       { "saturation": 2 },

@@ -1,7 +1,12 @@
 .header {
+  margin-bottom: 80px;
   margin-left: auto;
   margin-right: auto;
   width: 300px;
+}
+
+.intro {
+  margin-bottom: 80px;
 }
 
 .timeline,
@@ -18,4 +23,16 @@
 .timeline-details .timeline-drugs,
 .timeline-details .timeline-contacts {
   flex: 0 0 50%;
+}
+
+.notes {
+  margin-left: auto;
+  margin-right: auto;
+  width: 500px;
+}
+
+.page-footer .footer--wrapper {
+  margin-left: auto;
+  margin-right: auto;
+  width: 540px;
 }

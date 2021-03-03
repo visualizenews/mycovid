@@ -1,9 +1,59 @@
+h2 {
+  display: inline-block;
+}
+
 .timeline {
-  margin-left: 20px;
-  margin-right: 20px;
-  width: auto;
+  width: 1300px;
 }
 
 .timeline-item {
   display: flex;
+  margin-bottom: 120px;
+}
+
+.timeline-date {
+  display: block;
+  flex: 0 0 200px;
+  padding-right: 30px;
+  position: relative;
+}
+
+.timeline-date h3 {
+  position: sticky;
+  top: 30px;
+}
+
+.timeline-event {
+  flex: 0 0 40%;
+  padding: 40px 30px 0 30px;
+  margin-bottom: 0;
+  max-width: 600px;
+}
+
+.timeline-detail {
+  display: block;
+  flex: 1 1 auto;
+  padding: 40px 30px 0 30px;
+  max-width: 600px;
+}
+
+.timeline-details,
+.timeline-chart {
+  padding: 0;
+}
+
+.notes {
+  width: 1300px;
+}
+
+.page-footer .footer--wrapper {
+  width: 1340px;
+}
+
+.page-footer .col:first-child {
+  flex: 0 0 25%;
+}
+
+.page-footer .col:last-child {
+  flex: 0 0 75%;
 }
