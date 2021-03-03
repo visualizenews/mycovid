@@ -125,7 +125,7 @@
       { "cough": 0 },
       { "fever": 0 },
       { "unrest": 3 },
-      { "saturation": 2 },
+      { "saturation": 1 },
       { "sneezing": 1 },
       { "bloodPressure": 0 },
       { "smellAndTaste" : 3 },
