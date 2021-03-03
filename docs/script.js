@@ -109,18 +109,22 @@
     const days = document.querySelectorAll('[data-id]');
     days.forEach((d) => {
       const id = d.getAttribute('data-id');
+      let HTML = '';
       if (id) {
         const thisData = data.find(d => d.date === id);
         if (thisData) {
           if (thisData.symptoms) {
-            d.innerHTML += `<div class="timeline-chart"><h3>My Symptoms</h3><div class="chart" data-chart="symptoms" data-id="${id}"></div></div>`;
+            HTML += `<div class="timeline-chart"><h3>My Symptoms</h3><div class="chart" data-chart="symptoms" data-id="${id}"></div></div>`;
           }
+          HTML += `<div class="timeline-details">`;
           if (thisData.drugs) {
-            d.innerHTML += `<div class="timeline-drugs"><h3>Drugs I took</h3><div class="drugs" data-chart="drugs" data-id="${id}"></div></div>`;
+            HTML += `<div class="timeline-drugs"><h3>Drugs I took</h3><div class="drugs" data-chart="drugs" data-id="${id}"></div></div>`;
           }
           if (thisData.contacts) {
-            d.innerHTML += `<div class="timeline-contacts"><h3>Phone calls I had</h3><div class="contacts" data-chart="contacts" data-id="${id}"></div></div>`;
+            HTML += `<div class="timeline-contacts"><h3>Phone calls I had</h3><div class="contacts" data-chart="contacts" data-id="${id}"></div></div>`;
           }
+          HTML += `</div>`;
+          d.innerHTML += HTML;
         }
       }
     });

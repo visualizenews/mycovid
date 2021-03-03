@@ -99,7 +99,7 @@
     "symptoms": [
       { "head": 0 },
       { "belly": 0 },
-      { "fatigue": 2 },
+      { "fatigue": 3 },
       { "cough": 1 },
       { "fever": 0 },
       { "unrest": 3 },
@@ -108,11 +108,25 @@
       { "bloodPressure": 0 },
       { "smellAndTaste" : 3 }
     ],
-    "drugs": [ "cortisone", "vitamin c", "vitamin d", "lactoferrin", "ketoprofen" ],
+    "drugs": [ "cortisone", "vitamin c", "vitamin d", "lactoferrin", "ketoprofen" ]
+  },
+  {
+    "date": "2021-03-03",
+    "symptoms": [
+      { "head": 0 },
+      { "belly": 0 },
+      { "fatigue": 2 },
+      { "cough": 1 },
+      { "fever": 0 },
+      { "unrest": 3 },
+      { "saturation": 2 },
+      { "sneezing": 1 },
+      { "bloodPressure": 0 },
+      { "smellAndTaste" : 3 }
+    ],
+    "drugs": [ "cortisone", "vitamin c", "vitamin d", "azithromycin", "lactoferrin", "ketoprofen" ],
     "contacts": [
-      { "gp": 0 },
-      { "pediatrician": 0 },
-      { "ats": 0 }
+      { "pediatrician": 1 }
     ]
   }
 ]

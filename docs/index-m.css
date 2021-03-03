@@ -1,0 +1,21 @@
+.header {
+  margin-left: auto;
+  margin-right: auto;
+  width: 300px;
+}
+
+.timeline,
+.intro {
+  margin-left: auto;
+  margin-right: auto;
+  width: 500px;
+}
+
+.timeline-details {
+  display: flex;
+}
+
+.timeline-details .timeline-drugs,
+.timeline-details .timeline-contacts {
+  flex: 0 0 50%;
+}
