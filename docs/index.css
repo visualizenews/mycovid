@@ -348,6 +348,10 @@ sup a {
   padding-top: 40px;
 }
 
+.notes p {
+  max-width: 600px;
+}
+
 /* Footer */
 
 .page-footer {
