@@ -1,6 +1,6 @@
 
 (() => {
-  const pattern = 'stripes';
+  const pattern = 'dots';
   const config = {
     source: "./symptoms.json",
     mapping: {
