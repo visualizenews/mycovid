@@ -131,10 +131,30 @@
       { "smellAndTaste" : 3 },
       { "throatAche" : 1 }
     ],
-    "drugs": [ "cortisone", "vitamin c", "vitamin d", "vitamin k", "azithromycin", "lactoferrin", "ketoprofen" ],
+    "drugs": [ "cortisone", "vitamin c", "vitamin d", "vitamin k", "lactoferrin", "ketoprofen" ],
     "contacts": [
       { "pediatrician": 1 },
       { "gp": 1 }
+    ]
+  },
+  {
+    "date": "2021-03-04",
+    "symptoms": [
+      { "head": 0 },
+      { "belly": 0 },
+      { "fatigue": 2 },
+      { "cough": 0 },
+      { "fever": 0 },
+      { "unrest": 2 },
+      { "saturation": 1 },
+      { "sneezing": 0 },
+      { "bloodPressure": 0 },
+      { "smellAndTaste" : 2 },
+      { "throatAche" : 0 }
+    ],
+    "drugs": [ "cortisone", "vitamin c", "vitamin d", "vitamin k", "lactoferrin", "ketoprofen" ],
+    "contacts": [
+      { "pediatrician": 1 }
     ]
   }
 ]
