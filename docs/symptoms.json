@@ -2,6 +2,7 @@
   {
     "date": "2021-02-25",
     "symptoms": [
+      { "mood": 3 },
       { "head": 3 },
       { "belly": 0 },
       { "fatigue": 3 },
@@ -23,6 +24,7 @@
   {
     "date": "2021-02-26",
     "symptoms": [
+      { "mood": 3 },
       { "head": 1 },
       { "belly": 0 },
       { "fatigue": 3 },
@@ -45,6 +47,7 @@
   {
     "date": "2021-02-27",
     "symptoms": [
+      { "mood": 3 },
       { "head": 0 },
       { "belly": 1 },
       { "fatigue": 2 },
@@ -65,6 +68,7 @@
   {
     "date": "2021-02-28",
     "symptoms": [
+      { "mood": 2 },
       { "head": 0 },
       { "belly": 0 },
       { "fatigue": 2 },
@@ -82,6 +86,7 @@
   {
     "date": "2021-03-01",
     "symptoms": [
+      { "mood": 2 },
       { "head": 0 },
       { "belly": 0 },
       { "fatigue": 2 },
@@ -102,6 +107,7 @@
   {
     "date": "2021-03-02",
     "symptoms": [
+      { "mood": 2 },
       { "head": 0 },
       { "belly": 0 },
       { "fatigue": 3 },
@@ -119,6 +125,7 @@
   {
     "date": "2021-03-03",
     "symptoms": [
+      { "mood": 2 },
       { "head": 0 },
       { "belly": 0 },
       { "fatigue": 2 },
@@ -140,6 +147,7 @@
   {
     "date": "2021-03-04",
     "symptoms": [
+      { "mood": 1 },
       { "head": 0 },
       { "belly": 0 },
       { "fatigue": 2 },
@@ -161,6 +169,7 @@
   {
     "date": "2021-03-05",
     "symptoms": [
+      { "mood": 2 },
       { "head": 0 },
       { "belly": 0 },
       { "fatigue": 2 },

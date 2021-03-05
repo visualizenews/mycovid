@@ -11,6 +11,17 @@
   box-sizing: border-box;
 }
 
+a {
+  box-shadow: inset 0 -10px 0 var(--color-alternate);
+  color: var(--color-foreground);
+  text-decoration: none;
+}
+
+a:hover,
+a:active {
+  background: var(--color-alternate);
+}
+
 body {
   background: var(--color-background);
   color: var(--color-foreground);
@@ -106,7 +117,7 @@ sup a {
 
 .intro {
   display: block;
-  margin: 0 20px 80px 20px;
+  margin: 0 20px 120px 20px;
 }
 
 .intro h3 {
@@ -116,11 +127,11 @@ sup a {
 }
 
 .intro h3 strong {
-  background: var(--color-accent);
-  box-shadow: 0 0 0 2px var(--color-accent);
-  font-weight: 400;
+  box-shadow: inset 0 -10px 0 0 var(--color-accent);
+  font-weight: 600;
 }
 
+.aboutme,
 .timeline {
   display: block;
   margin: 0px 20px 40px 20px;
@@ -153,6 +164,7 @@ sup a {
   margin-bottom: 60px;
 }
 
+.aboutme p strong,
 .timeline-event strong {
   box-shadow: inset 0 -10px 0 0 var(--color-accent);
   font-weight: 600;

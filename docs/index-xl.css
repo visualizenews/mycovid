@@ -1,10 +1,24 @@
+.header {
+  margin-bottom: 240px;
+}
+
+.intro {
+  margin-bottom: 280px;
+}
+
 h2 {
   display: inline-block;
   width: 200px;
 }
 
+.aboutme,
 .timeline {
   width: 1300px;
+}
+
+.aboutme p {
+  max-width: 800px;
+  padding-left: 230px;
 }
 
 .timeline-item {

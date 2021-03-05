@@ -4,6 +4,7 @@
   const config = {
     source: "./symptoms.json",
     mapping: {
+      "mood": "Mood",
       "head": "Headache",
       "belly": "Stomach Ache",
       "fatigue": "Fatigue",

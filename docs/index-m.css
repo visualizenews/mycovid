@@ -5,10 +5,12 @@
   width: 300px;
 }
 
+.aboutme,
 .intro {
   margin-bottom: 80px;
 }
 
+.aboutme,
 .timeline,
 .intro {
   margin-left: auto;

@@ -1,12 +1,17 @@
 .header {
-  margin-bottom: 120px;
+  margin-bottom: 200px;
 }
 
 .intro {
-  margin-bottom: 160px;
+  margin-bottom: 240px;
   width: 680px;
 }
 
+.aboutme {
+  margin-bottom: 160px;
+}
+
+.aboutme,
 .timeline {
   width: 680px;
 }
