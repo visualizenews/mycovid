@@ -19,6 +19,20 @@
   width: 500px;
 }
 
+.overview .map {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 80px;
+}
+
+.overview .title {
+  flex: 0 0 100%;
+}
+
+.overview .text {
+  flex: 0 1 auto;
+}
+
 .timeline-details {
   display: flex;
 }

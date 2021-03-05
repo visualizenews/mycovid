@@ -33,6 +33,23 @@ h2 {
   width: 1300px;
 }
 
+.overview .progress,
+.overview .map {
+  display: flex;
+}
+
+.progress .title,
+.overview .title {
+  flex: 0 0 200px;
+  padding-right: 20px;
+}
+
+.progress .text,
+.overview .text {
+  flex: 0 0 40%;
+  padding: 40px 30px 0 30px;
+}
+
 .aboutme p {
   max-width: 800px;
   padding-left: 230px;

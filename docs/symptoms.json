@@ -182,6 +182,9 @@
       { "smellAndTaste" : 3 },
       { "throatAche" : 0 }
     ],
-    "drugs": [ "cortisone", "vitamin c", "vitamin d", "vitamin k", "lactoferrin", "ketoprofen" ]
+    "drugs": [ "cortisone", "vitamin c", "vitamin d", "vitamin k", "lactoferrin", "ketoprofen" ],
+    "contacts": [
+      { "gp": 1 }
+    ]
   }
 ]
