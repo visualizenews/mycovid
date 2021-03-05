@@ -1,9 +1,25 @@
 .header {
   margin-bottom: 240px;
+  width: 1300px;
+}
+
+.header .square {
+  left: 230px;
+}
+
+.header .text {
+  left: 300px;
+  transform: translate3d(0, -50%, 0);
 }
 
 .intro {
   margin-bottom: 280px;
+  padding-left: 230px;
+  width: 1300px;
+}
+
+.intro h3 {
+  max-width: 800px;
 }
 
 h2 {
@@ -11,6 +27,7 @@ h2 {
   width: 200px;
 }
 
+.overview,
 .aboutme,
 .timeline {
   width: 1300px;

@@ -131,6 +131,7 @@ sup a {
   font-weight: 600;
 }
 
+.overview,
 .aboutme,
 .timeline {
   display: block;
@@ -138,6 +139,8 @@ sup a {
   position: relative;
 }
 
+.progress h2,
+.aboutme h2,
 .timeline h2 {
   background: var(--color-background);
   position: sticky;

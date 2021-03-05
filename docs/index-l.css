@@ -7,10 +7,12 @@
   width: 680px;
 }
 
+.progress,
 .aboutme {
   margin-bottom: 160px;
 }
 
+.overview,
 .aboutme,
 .timeline {
   width: 680px;
