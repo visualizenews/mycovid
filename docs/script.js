@@ -18,6 +18,7 @@
       "gp": "G.P.",
       "pediatrician": "Pediatrician",
       "ats": "Local Health Authority",
+      "tf": "Covid-19 Task Force",
     },
     chart: {
       barHeight: 20,
