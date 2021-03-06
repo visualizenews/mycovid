@@ -190,7 +190,7 @@
   {
     "date": "2021-03-06",
     "symptoms": [
-      { "mood": 1 },
+      { "mood": 0 },
       { "head": 0 },
       { "belly": 0 },
       { "fatigue": 3 },
