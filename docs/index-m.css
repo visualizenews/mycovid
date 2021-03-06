@@ -53,3 +53,11 @@
   margin-right: auto;
   width: 540px;
 }
+
+
+/* Heatmaps */
+
+.drugs,
+.heatmaps {
+  margin-bottom: 80px;
+}

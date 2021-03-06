@@ -61,3 +61,11 @@
   order: 1;
   padding-right: 20px;
 }
+
+
+/* Heatmaps */
+
+.drugs,
+.heatmaps {
+  margin-bottom: 160px;
+}

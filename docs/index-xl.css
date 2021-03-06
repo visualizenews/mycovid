@@ -51,7 +51,7 @@ h2 {
 }
 
 .aboutme p {
-  max-width: 800px;
+  max-width: 690px;
   padding-left: 230px;
 }
 
@@ -105,4 +105,20 @@ h2 {
 
 .page-footer .col:last-child {
   flex: 0 0 66.66%;
+}
+
+
+/* Heatmaps */
+
+.drugs,
+.heatmaps {
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 210px;
+  width: 1300px;
+}
+
+.drugs .drugs-position,
+.heatmaps .heatmap-position {
+  margin-left: 0 !important;
 }

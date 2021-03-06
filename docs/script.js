@@ -37,6 +37,89 @@
 
   let data = [];
 
+  const heatmaps = () => {
+    if (document.querySelector('#heatmaps')) {
+      const drugs = [];
+      const days = [];
+      const kpis = {};
+      data.forEach((d) => {
+        days.push(new Date(d.date));
+        d.symptoms.forEach((s) => {
+          const k = Object.keys(s);
+          if (!kpis[k[0]]) {
+            kpis[k[0]] = [];
+          }
+          kpis[k[0]].push(s[k[0]]);
+        });
+        drugs.push(d.drugs);
+      });
+
+      let datesHTML = '';
+      let kpisHTML = '';
+      let heatmapsHTML = '';
+
+      const alfa = Object.keys(config.mapping);
+      const mp = {};
+      alfa.forEach((a) => {
+        mp[config.mapping[a]] = a;
+      });
+
+      const looops = Object.keys(mp).sort((a, b) => a > b ? 1 : -1);
+
+      looops.forEach((kk) => {
+        if (kpis[mp[kk]]) {
+          kpisHTML += `<div class="kpi-label">${config.mapping[mp[kk]]}</div>`;
+          heatmapsHTML += `<div class="kpi-heatmap">`;
+          kpis[mp[kk]].forEach((hm, i) => {
+            heatmapsHTML += `<div class="kpi-heatmap-cell kpi-heatmap-cell-${i}"><div class="kpi-heatmap-cell-inner"><svg width="100%" height="100%"><rect x="0" y="0" width="100%" height="100%" stroke="none" fill="url(#${pattern}${hm > 0 ? hm + 1 : ''})"</svg></div></div>`;
+          });
+          heatmapsHTML += `</div>`;
+        }
+      });
+      datesHTML += `<div class="kpi-heatmap kpi-days">`;
+      days.forEach((dd, i) => {
+        datesHTML += `<div class="kpi-heatmap-cell kpi-heatmap-cell-${i}" title="${new Intl.DateTimeFormat('en-US', { dateStyle: 'long' }).format(dd)}">${(i % 7 === 0) ? i + 1 : ''}</div>`;
+      });
+      datesHTML += `</div>`;
+      document.querySelector('#heatmaps .kpis').innerHTML = kpisHTML;
+      document.querySelector('#heatmaps .heatmaps-wrapper').innerHTML = datesHTML + heatmapsHTML;
+      const heatmapPositioner = document.querySelector('.heatmap-position');
+      let cWidth = 140 + document.querySelectorAll('.heatmaps-wrapper .kpi-days .kpi-heatmap-cell').length * document.querySelector('.heatmaps-wrapper .kpi-days .kpi-heatmap-cell').offsetWidth;
+      if (cWidth < window.innerWidth) {
+        heatmapPositioner.style.marginLeft = 'auto';
+        heatmapPositioner.style.marginRight = 'auto';
+        heatmapPositioner.style.width = `${cWidth}px`;
+      }
+
+      let drugsHTML = '';
+      drugs.forEach((d, i) => {
+        drugsHTML += `<div class="drugs-day" title="${new Intl.DateTimeFormat('en-US', { dateStyle: 'long' }).format(days[i])}">`;
+        drugsHTML += `<ul>`;
+        d.sort((a,b) => a > b ? -1 : 1).forEach((dd) => {
+          drugsHTML += `<li class="drug"><span>${dd}</span></li>`;
+        });
+        drugsHTML += `</ul>`;
+        drugsHTML += `<span>Day ${i + 1}</span>`;
+        drugsHTML += `</div>`;
+      });
+
+      document.querySelector('.drugs-wrapper').innerHTML = drugsHTML;
+
+      let dWidth = 40 + document.querySelectorAll('.drugs-position .drugs-day').length * document.querySelector('.drugs-position .drugs-day').offsetWidth;
+      const drugsPositioner = document.querySelector('.drugs-position');
+      console.log(dWidth, window.innerWidth);
+      if (dWidth < window.innerWidth) {
+        drugsPositioner.style.marginLeft = 'auto';
+        drugsPositioner.style.marginRight = 'auto';
+        drugsPositioner.style.width = `${dWidth}px`;
+      } else {
+        drugsPositioner.style.marginLeft = null;
+        drugsPositioner.style.marginRight = null;
+        drugsPositioner.style.width = null;
+      }
+    }
+  };
+
   const ogimage = () => {
     const tag = document.querySelector('[data-chart="ogimage"]');
     if (tag) {
@@ -132,7 +215,7 @@
           }
           HTML += `<div class="timeline-details">`;
           if (thisData.drugs) {
-            HTML += `<div class="timeline-drugs"><h3>Drugs I took</h3><div class="drugs" data-chart="drugs" data-id="${id}"></div></div>`;
+            HTML += `<div class="timeline-drugs"><h3>Drugs I took</h3><div class="day-drugs" data-chart="drugs" data-id="${id}"></div></div>`;
           }
           if (thisData.contacts) {
             HTML += `<div class="timeline-contacts"><h3>Phone calls I had</h3><div class="contacts" data-chart="contacts" data-id="${id}"></div></div>`;
@@ -159,16 +242,30 @@
     }
   };
 
+  const draw = () => {
+    heatmaps();
+    details();
+    ogimage();
+    symptoms();
+    drugs();
+    contacts();
+  };
+
   const init = () => {
     fetch(config.source)
       .then(response => response.json())
       .then(d => {
         data = d;
-        details();
-        ogimage();
-        symptoms();
-        drugs();
-        contacts();
+        draw();
+        window.addEventListener('resize', () => {
+          setTimeout(() => {
+            const t = document.querySelectorAll('.timeline-detail');
+            t.forEach((tt) => {
+              tt.innerHTML = '';
+            });
+            draw(); 
+          }, 500);
+        });
       }
     );
     footers();
