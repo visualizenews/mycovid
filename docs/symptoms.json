@@ -225,5 +225,27 @@
       { "throatAche" : 0 }
     ],
     "drugs": [ "cortisone", "vitamin c", "vitamin d", "vitamin k", "lactoferrin", "aspirine" ]
+  },
+  {
+    "date": "2021-03-08",
+    "symptoms": [
+      { "mood": 0 },
+      { "head": 0 },
+      { "belly": 0 },
+      { "fatigue": 2 },
+      { "cough": 0 },
+      { "fever": 0 },
+      { "unrest": 0 },
+      { "saturation": 1 },
+      { "sneezing": 0 },
+      { "bloodPressure": 0 },
+      { "smellAndTaste" : 2 },
+      { "throatAche" : 0 }
+    ],
+    "drugs": [ "vitamin c", "vitamin d", "vitamin k", "lactoferrin" ],
+    "contacts": [
+      { "tf": 1 },
+      { "gp": 1 }
+    ]
   }
 ]
