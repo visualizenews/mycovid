@@ -78,7 +78,7 @@
       });
       datesHTML += `<div class="kpi-heatmap kpi-days">`;
       days.forEach((dd, i) => {
-        datesHTML += `<div class="kpi-heatmap-cell kpi-heatmap-cell-${i}" title="${new Intl.DateTimeFormat('en-US', { dateStyle: 'long' }).format(dd)}">${i}</div>`;
+        datesHTML += `<div class="kpi-heatmap-cell kpi-heatmap-cell-${i}" title="${new Intl.DateTimeFormat('en-US', { dateStyle: 'long' }).format(dd)}">${i + 1}</div>`;
       });
       datesHTML += `</div>`;
       document.querySelector('#heatmaps .kpis').innerHTML = kpisHTML;
