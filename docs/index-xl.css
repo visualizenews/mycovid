@@ -122,3 +122,33 @@ h2 {
 .heatmaps .heatmap-position {
   margin-left: 0 !important;
 }
+
+/*
+.heatmaps .heatmap-position {
+  padding-left: 200px;
+}
+
+.heatmaps .kpis {
+  text-align: right;
+  width: 160px;
+}
+
+.heatmaps .heatmaps-days {
+  text-align: right;
+  width: 160px;
+}
+
+.kpi-heatmap-cell {
+  flex: 0 0 40px;
+  max-width: 40px;
+}
+
+.kpi-heatmap-cell-inner {
+  width: 38px;
+}
+
+.kpi-days .kpi-heatmap-cell {
+  flex: 0 0 40px;
+  max-width: 40px;
+}
+*/
