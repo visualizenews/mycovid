@@ -1,0 +1,32 @@
+.kpi-days .kpi-heatmap-cell,
+.heatmaps .heatmaps-days {
+  height: 36px;
+  line-height: 36px;
+}
+
+.heatmaps .heatmap-position {
+  padding-left: 180px;
+  width: 100% !important;
+}
+
+.kpi-heatmap-cell,
+.kpi-days .kpi-heatmap-cell {
+  flex: 0 0 35px;
+  min-width: 35px;
+}
+
+.heatmaps .kpis {
+  top: 36px;
+}
+
+.kpi-heatmap-cell-inner {
+  width: 34px;
+}
+
+.legend {
+  margin-left: 180px !important;
+}
+
+.legend svg {
+  background: #fff;
+}
