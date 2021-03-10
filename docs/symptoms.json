@@ -247,5 +247,48 @@
       { "tf": 1 },
       { "gp": 1 }
     ]
+  },
+  {
+    "date": "2021-03-09",
+    "symptoms": [
+      { "mood": 2 },
+      { "head": 0 },
+      { "belly": 0 },
+      { "fatigue": 1 },
+      { "cough": 0 },
+      { "fever": 0 },
+      { "unrest": 0 },
+      { "saturation": 1 },
+      { "sneezing": 0 },
+      { "bloodPressure": 0 },
+      { "smellAndTaste" : 2 },
+      { "throatAche" : 0 }
+    ],
+    "drugs": [ "vitamin c", "vitamin d", "vitamin k", "lactoferrin" ],
+    "contacts": [
+      { "tf": 1 },
+      { "gp": 1 }
+    ]
+  },
+  {
+    "date": "2021-03-10",
+    "symptoms": [
+      { "mood": 0 },
+      { "head": 0 },
+      { "belly": 0 },
+      { "fatigue": 1 },
+      { "cough": 0 },
+      { "fever": 0 },
+      { "unrest": 0 },
+      { "saturation": 1 },
+      { "sneezing": 0 },
+      { "bloodPressure": 0 },
+      { "smellAndTaste" : 2 },
+      { "throatAche" : 0 }
+    ],
+    "drugs": [ "vitamin c", "vitamin d", "vitamin k", "lactoferrin" ],
+    "contacts": [
+      { "gp": 1 }
+    ]
   }
 ]
