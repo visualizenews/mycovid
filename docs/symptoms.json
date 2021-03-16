@@ -305,12 +305,108 @@
       { "saturation": 0 },
       { "sneezing": 0 },
       { "bloodPressure": 0 },
-      { "smellAndTaste" : 1 },
+      { "smellAndTaste" : 2 },
       { "throatAche" : 0 }
     ],
     "drugs": [ "vitamin c", "vitamin d" ],
     "contacts": [
       { "ats": 1 }
     ]
+  },
+  {
+    "date": "2021-03-12",
+    "symptoms": [
+      { "mood": 0 },
+      { "head": 0 },
+      { "belly": 0 },
+      { "fatigue": 1 },
+      { "cough": 0 },
+      { "fever": 0 },
+      { "unrest": 0 },
+      { "saturation": 0 },
+      { "sneezing": 0 },
+      { "bloodPressure": 0 },
+      { "smellAndTaste" : 2 },
+      { "throatAche" : 0 }
+    ],
+    "drugs": [ "vitamin c", "vitamin d" ],
+    "contacts": [
+      { "ats": 1 }
+    ]
+  },
+  {
+    "date": "2021-03-13",
+    "symptoms": [
+      { "mood": 0 },
+      { "head": 0 },
+      { "belly": 0 },
+      { "fatigue": 1 },
+      { "cough": 0 },
+      { "fever": 0 },
+      { "unrest": 0 },
+      { "saturation": 0 },
+      { "sneezing": 0 },
+      { "bloodPressure": 0 },
+      { "smellAndTaste" : 2 },
+      { "throatAche" : 0 }
+    ],
+    "drugs": [ "vitamin c", "vitamin d" ]
+  },
+  {
+    "date": "2021-03-14",
+    "symptoms": [
+      { "mood": 0 },
+      { "head": 0 },
+      { "belly": 0 },
+      { "fatigue": 1 },
+      { "cough": 0 },
+      { "fever": 0 },
+      { "unrest": 0 },
+      { "saturation": 0 },
+      { "sneezing": 0 },
+      { "bloodPressure": 0 },
+      { "smellAndTaste" : 2 },
+      { "throatAche" : 0 }
+    ],
+    "drugs": [ "vitamin c", "vitamin d" ]
+  },
+  {
+    "date": "2021-03-15",
+    "symptoms": [
+      { "mood": 0 },
+      { "head": 0 },
+      { "belly": 0 },
+      { "fatigue": 0 },
+      { "cough": 0 },
+      { "fever": 0 },
+      { "unrest": 0 },
+      { "saturation": 0 },
+      { "sneezing": 0 },
+      { "bloodPressure": 0 },
+      { "smellAndTaste" : 2 },
+      { "throatAche" : 0 }
+    ],
+    "drugs": [ "vitamin c", "vitamin d" ],
+    "contacts": [
+      { "gp": 1 }
+    ]
+  },
+  {
+    "date": "2021-03-16",
+    "symptoms": [
+      { "mood": 0 },
+      { "head": 0 },
+      { "belly": 0 },
+      { "fatigue": 0 },
+      { "cough": 0 },
+      { "fever": 0 },
+      { "unrest": 0 },
+      { "saturation": 0 },
+      { "sneezing": 0 },
+      { "bloodPressure": 0 },
+      { "smellAndTaste" : 1 },
+      { "throatAche" : 0 }
+    ],
+    "drugs": [ "vitamin c", "vitamin d" ]
   }
 ]
